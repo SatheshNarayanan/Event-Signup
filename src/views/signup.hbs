@@ -145,6 +145,7 @@
       )
       .then(data => {
         swal("Great Job!!", data.message, "success");
+        $addUserform.reset()
       })
       .catch(error => {
         switch (error.message) {
